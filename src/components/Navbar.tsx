@@ -4,10 +4,11 @@ import "../styles/Navbar.scss";
 import { Button, Link, Title } from "./emotion";
 
 const Navbar = () => {
-  const navRef = useRef<any>(null);
+  const navRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     window.addEventListener("scroll", e => {
+      if (navRef.current === null) return;
       if (window.scrollY > 100) {
         navRef.current.style.backgroundColor = "#0984E3";
       } else {

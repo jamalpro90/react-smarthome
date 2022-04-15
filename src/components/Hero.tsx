@@ -13,6 +13,8 @@ const Hero = () => {
     <div className="hero-container">
       {/* Machine Learing Image */}
       <div className="machine-learning" />
+      {/* Circle */}
+      <div className="circle" />
 
       <Navbar />
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, ButtonBlue, Text, Title } from "./emotion";
+import { ButtonBlue, Text, Title } from "./emotion";
 
 const About = () => {
   return (

@@ -5,7 +5,6 @@
   margin: 0rem 0;
   padding: 0;
   position: relative;
-  // z-index: -3;
 
   &::before {
     content: "";
@@ -20,15 +19,13 @@
     opacity: 0.5;
   }
 
-  &::after {
-    content: "";
+  .circle {
     background: url("../public/img/bulat.png");
     width: 500px;
     height: 500px;
     position: absolute;
     right: -250px;
     top: -250px;
-    object-fit: cover;
     // z-index: -2;
   }
 
@@ -128,6 +125,66 @@
     .about-right {
       // border: 1px solid white;
       width: 500px;
+    }
+  }
+}
+
+// Testimonials
+.testi-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: 1px solid white;
+    width: 90%;
+    margin: 2rem auto;
+
+    .card {
+      // border: 1px solid black;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
+
+      p {
+        margin: 0;
+      }
+
+      img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 1rem;
+      }
+
+      span {
+        margin: 5px 0;
+
+        &:nth-child(2) {
+          color: #555;
+          font-size: 14px;
+          font-style: italic;
+        }
+      }
+    }
+  }
+
+  .arrow-container {
+    // border: 3px solid black;
+
+    .arrow {
+      font-size: 2rem;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 0 0.7rem;
+
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }

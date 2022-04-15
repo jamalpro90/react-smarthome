@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import Hero from "./components/Hero";
 import About from "./components/About";
+import Testimonials from "./components/Testimonials";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
 
       {/* About */}
       <About />
+
+      {/* Testimonials */}
+      <Testimonials />
     </div>
   );
 }
