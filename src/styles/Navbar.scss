@@ -1,9 +1,17 @@
+@import "./Variables.scss";
+
 nav {
-  // background-color: red;
-  position: sticky;
+  // background-color: $primary-color;
+  position: fixed;
+  // width: inherit;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 64px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  transition: 0.3s;
   z-index: 99;
 
   .left {
