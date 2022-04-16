@@ -78,6 +78,7 @@ export const FaqBox = styled.div`
   align-items: center;
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   margin: 2rem 0;
+  cursor: pointer;
 `;
 
 export const FaqTextBox = styled.div`
@@ -91,4 +92,8 @@ export const FaqTextBox = styled.div`
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   margin: 2rem 0;
   line-height: 1.4rem;
+  // transition: 0.5s;
+  // transform: translateY(-2rem);
+  // display: none;
+  // visibility: hidden;
 `;

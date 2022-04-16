@@ -1,6 +1,30 @@
 import React from "react";
-import { FaqBox, FaqTextBox, Text, Title } from "./emotion";
-import { FaPlus, FaMinus } from "react-icons/fa";
+import CardFaq from "./CardFaq";
+import { Title } from "./emotion";
+
+type Data = {
+  title: string;
+  text: string;
+};
+
+const data: Data[] = [
+  {
+    title: "Faqila Awesome",
+    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi velit animi qui quia modi nesciunt corporis facere, autem similique assumenda? Quasi rerum optio aperiam esse quae dolore llum eius repellendus iusto est voluptate veniam aspernatur non, at hic nam nemo ab tempore nisi soluta accusamus? Nobis, repellat? Praesentium, a laborum?",
+  },
+  {
+    title: "Babayaga",
+    text: "Nemo ab tempore nisi soluta accusamus? Nobis, repellat? Praesentium, a laborum?",
+  },
+  {
+    title: "Aladin",
+    text: "Autem similique assumenda? Quasi rerum optio aperiam esse quae dolore llum eius repellendus iusto est voluptate veniam aspernatur non, at hic nam nemo ab tempore nisi soluta accusamus? Nobis, repellat? Praesentium, a laborum?",
+  },
+  {
+    title: "Malfinsent",
+    text: "Quasi rerum optio aperiam esse quae dolore llum eius repellendus iusto est voluptate veniam aspernatur non, at hic nam nemo ab tempore nisi soluta accusamus? Nobis, repellat? Praesentium, a laborum? aspernatur non, at hic nam nemo ab tempore nisi soluta accusamus? Nobis, repellat? Praesentium, a laborum?",
+  },
+];
 
 const Faq = () => {
   return (
@@ -9,34 +33,9 @@ const Faq = () => {
 
       {/* Content */}
       <div>
-        <FaqBox>
-          <FaMinus className="icon" />
-          <p className="title-faq">Faqila Awesome</p>
-        </FaqBox>
-
-        <FaqTextBox>
-          <Text>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            velit animi qui quia modi nesciunt corporis facere, autem similique
-            assumenda? Quasi rerum optio aperiam esse quae dolore illum eius
-            repellendus iusto est voluptate veniam aspernatur non, at hic nam
-            nemo ab tempore nisi soluta accusamus? Nobis, repellat? Praesentium,
-            a laborum?
-          </Text>
-        </FaqTextBox>
-
-        <FaqBox>
-          <FaPlus className="icon" />
-          <p className="title-faq">Babayaga</p>
-        </FaqBox>
-        <FaqBox>
-          <FaPlus className="icon" />
-          <p className="title-faq">Aldin Prescoth</p>
-        </FaqBox>
-        <FaqBox>
-          <FaPlus className="icon" />
-          <p className="title-faq">Maldini Syafidah</p>
-        </FaqBox>
+        {data.map((faq: Data, i: number) => (
+          <CardFaq key={i} title={faq.title} text={faq.text} />
+        ))}
       </div>
     </div>
   );
