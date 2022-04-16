@@ -66,3 +66,29 @@ export const ButtonBlue = styled.button`
     transform: scale(1.1);
   }
 `;
+
+export const FaqBox = styled.div`
+  min-width: 100px;
+  width: 700px;
+  height: 50px;
+  background-color: #ccc;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  margin: 2rem 0;
+`;
+
+export const FaqTextBox = styled.div`
+  min-width: 100px;
+  width: 700px;
+  background-color: #ddd;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+  margin: 2rem 0;
+  line-height: 1.4rem;
+`;

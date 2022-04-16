@@ -3,6 +3,8 @@ import "./App.scss";
 import Hero from "./components/Hero";
 import About from "./components/About";
 import Testimonials from "./components/Testimonials";
+import Client from "./components/Client";
+import Faq from "./components/Faq";
 
 function App() {
   return (
@@ -25,6 +27,16 @@ function App() {
 
       {/* Testimonials */}
       <Testimonials />
+
+      {/* Client */}
+      <Client />
+
+      {/* Faq */}
+      <Faq />
+
+      {[...Array(20)].map((a, i) => (
+        <br />
+      ))}
     </div>
   );
 }
