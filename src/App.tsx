@@ -5,6 +5,7 @@ import About from "./components/About";
 import Testimonials from "./components/Testimonials";
 import Client from "./components/Client";
 import Faq from "./components/Faq";
+import Download from "./components/Download";
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
 
       {/* Faq */}
       <Faq />
+
+      {/* Download */}
+      <Download />
 
       {[...Array(20)].map((a, i) => (
         <br />

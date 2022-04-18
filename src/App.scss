@@ -86,10 +86,23 @@
 
 .app-store {
   width: 200px;
+  margin-right: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 .play-store {
   width: 262px;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
 // Download
@@ -121,6 +134,7 @@
     justify-content: space-between;
     width: 850px;
     margin-left: 5rem;
+    margin-top: 3rem;
 
     .about-right {
       // border: 1px solid white;
@@ -237,5 +251,54 @@
   .title-faq {
     font-size: 1.2rem;
     font-weight: 600;
+  }
+}
+
+// Download
+.down-container {
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .download {
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+    margin-left: 5rem;
+    margin-top: 3rem;
+
+    .download-left {
+      // border: 1px solid white;
+      width: 500px;
+    }
+
+    .store-container {
+      display: flex;
+      align-items: center;
+
+      .app-store {
+        width: 154px;
+        height: 51px;
+        margin-right: 1rem;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+
+      .play-store {
+        width: 202px;
+        height: 78px;
+        cursor: pointer;
+        transition: 0.4s;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
   }
 }

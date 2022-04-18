@@ -5,6 +5,8 @@ const About = () => {
   return (
     <div className="about-container">
       <Title size="64px">About Us</Title>
+
+      {/* About */}
       <div className="about">
         <img src="/img/hp.png" alt="smartphone" className="phone-image" />
 
