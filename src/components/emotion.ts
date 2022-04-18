@@ -57,7 +57,7 @@ export const ButtonBlue = styled.button`
   padding: 15px 25px;
   font-size: 20px;
   font-style: italic;
-  font-weight: 600;
+  font-weight: bold;
   letter-spacing: 1px;
   cursor: pointer;
   transition: 0.5s;

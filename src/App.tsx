@@ -6,6 +6,7 @@ import Testimonials from "./components/Testimonials";
 import Client from "./components/Client";
 import Faq from "./components/Faq";
 import Download from "./components/Download";
+import Contact from "./components/Contact";
 
 function App() {
   return (
@@ -37,6 +38,12 @@ function App() {
 
       {/* Download */}
       <Download />
+
+      {/* Contact */}
+      <Contact />
+
+      {/* Wave Image */}
+      <img src="/img/wave.png" alt="wave" className="wave" />
 
       {[...Array(20)].map((a, i) => (
         <br />
