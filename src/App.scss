@@ -369,3 +369,42 @@
   height: 200px;
   border-bottom: 3px solid #444;
 }
+
+// Footer
+footer {
+  margin-top: 3rem;
+
+  .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    .sub-footer {
+      padding: 0 64px;
+
+      h4 {
+        font-size: 20px;
+      }
+    }
+  }
+
+  .bottom {
+    margin-top: 3rem;
+    background-color: #222;
+    color: white;
+    font-size: 16px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+
+    .heart {
+      color: #d63031;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0 10px;
+    }
+  }
+}

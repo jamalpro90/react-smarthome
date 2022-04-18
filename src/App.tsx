@@ -7,6 +7,7 @@ import Client from "./components/Client";
 import Faq from "./components/Faq";
 import Download from "./components/Download";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -45,9 +46,12 @@ function App() {
       {/* Wave Image */}
       <img src="/img/wave.png" alt="wave" className="wave" />
 
-      {[...Array(20)].map((a, i) => (
+      {/* Footer */}
+      <Footer />
+
+      {/* {[...Array(20)].map((a, i) => (
         <br />
-      ))}
+      ))} */}
     </div>
   );
 }
