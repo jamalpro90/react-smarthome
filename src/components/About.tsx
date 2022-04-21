@@ -3,7 +3,7 @@ import { ButtonBlue, Text, Title } from "./emotion";
 
 const About = () => {
   return (
-    <div className="about-container">
+    <div id="about" className="about-container">
       <Title size="64px">About Us</Title>
 
       {/* About */}

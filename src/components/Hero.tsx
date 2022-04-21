@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 
 const Hero = () => {
   return (
-    <div className="hero-container">
+    <div id="hero" className="hero-container">
       {/* Machine Learing Image */}
       <div className="machine-learning" />
       {/* Circle */}

@@ -5,11 +5,12 @@ export const Container = styled.div`
   padding: 0 64px;
 `;
 
-export const Link = styled.p`
+export const Link = styled.a`
   color: white;
   font-weight: 500;
   letter-spacing: 1px;
   font-size: 16px;
+  text-decoration: none;
   margin: 0;
   cursor: pointer;
   transition: 0.5s;

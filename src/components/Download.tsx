@@ -3,7 +3,7 @@ import { Text, Title } from "./emotion";
 
 const Download = () => {
   return (
-    <div className="down-container">
+    <div id="download" className="down-container">
       <Title size="64px">Download</Title>
 
       {/* Download */}
