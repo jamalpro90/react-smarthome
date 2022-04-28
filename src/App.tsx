@@ -10,7 +10,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import LoginModal from "./components/LoginModal";
 import SignupModal from "./components/SignupModal";
-import { ModalContextProvier, ModalContext } from "./store/ModalContext";
+import { ModalContextProvier } from "./store/ModalContext";
 
 function App() {
   return (

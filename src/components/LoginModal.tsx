@@ -13,16 +13,17 @@ type Inputs = {
 const LoginModal = () => {
   const [eye, setEye] = useState<boolean>(false);
   const modal = useContext(ModalContext);
-  const { loginModal, setLoginModal, setUser } = modal;
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<Inputs>();
+  const { loginModal, setLoginModal, setUser, setSignupModal } = modal;
+  const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = data => {
     setUser({ email: data.email, password: data.password });
     setLoginModal(false);
+  };
+
+  const handleOpenRegister = () => {
+    setLoginModal(false);
+    setSignupModal(true);
   };
 
   return (
@@ -58,6 +59,15 @@ const LoginModal = () => {
         )}
 
         <button type="submit">Login</button>
+        <p>
+          Don't have an account,{" "}
+          <span
+            onClick={handleOpenRegister}
+            style={{ color: "blue", cursor: "pointer" }}
+          >
+            Register
+          </span>
+        </p>
       </form>
     </div>
   );

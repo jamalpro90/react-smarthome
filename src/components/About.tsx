@@ -12,7 +12,9 @@ const About = () => {
 
         {/* Title & text */}
         <div className="about-right">
-          <Title margin="1rem 0 0 0">Smart Home Smart Services</Title>
+          <Title className="sub-title" margin="1rem 0 0 0">
+            Smart Home Smart Services
+          </Title>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
             debitis, impedit laborum iusto quod aliquid dolor eveniet incidunt

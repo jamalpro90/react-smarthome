@@ -10,7 +10,9 @@ const Download = () => {
       <div className="download">
         {/* Left */}
         <div className="download-left">
-          <Title margin="1rem 0 0 0">Download For Mobile App</Title>
+          <Title className="sub-title" margin="1rem 0 0 0">
+            Download For Mobile App
+          </Title>
           <Text>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
             debitis, impedit laborum iusto quod aliquid dolor eveniet incidunt

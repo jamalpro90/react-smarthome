@@ -14,11 +14,7 @@ const SignupModal = () => {
   const [eye, setEye] = useState<boolean>(false);
   const modal = useContext(ModalContext);
   const { signupModal, setSignupModal } = modal;
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm<Inputs>();
+  const { register, handleSubmit } = useForm<Inputs>();
 
   const onSubmit: SubmitHandler<Inputs> = data => {
     console.log(data);

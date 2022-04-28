@@ -20,10 +20,10 @@ const Hero = () => {
 
       {/* Hero Content */}
       <div className="hero-text">
-        <Title margin="0" size="64px" color="white">
+        <Title className="title" margin="0" size="64px" color="white">
           Smart Home
         </Title>
-        <Title margin="0" size="64px" color="white">
+        <Title className="title" margin="0" size="64px" color="white">
           Application
         </Title>
         <Text color="white">
@@ -54,6 +54,11 @@ const Hero = () => {
       <div className="hero-phone-images">
         <img src="/img/hp.png" alt="smartphone" />
         <img src="/img/hp.png" alt="smartphone" className="large" />
+        <img src="/img/hp.png" alt="smartphone" />
+      </div>
+
+      {/* Phone Image Mobile */}
+      <div className="mobile-phone">
         <img src="/img/hp.png" alt="smartphone" />
       </div>
     </div>

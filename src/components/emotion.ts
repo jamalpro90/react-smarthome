@@ -28,11 +28,17 @@ export const Title = styled.h1<{
   font-weight: bold;
   color: ${props => (props.color ? props.color : "#111")};
   margin: ${props => (props.margin ? props.margin : "28px")};
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
 `;
 
 export const Text = styled.p<{ size?: string; color?: string }>`
   color: ${props => (props.color ? props.color : "#111")};
   font-size: ${props => (props.size ? props.size : "16px")};
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
 
 export const Button = styled.button`
@@ -80,6 +86,10 @@ export const FaqBox = styled.div`
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   margin: 2rem 0;
   cursor: pointer;
+  @media (max-width: 768px) {
+    width: 80vw;
+    height: 30px;
+  }
 `;
 
 export const FaqTextBox = styled.div`
@@ -93,8 +103,7 @@ export const FaqTextBox = styled.div`
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
   margin: 2rem 0;
   line-height: 1.4rem;
-  // transition: 0.5s;
-  // transform: translateY(-2rem);
-  // display: none;
-  // visibility: hidden;
+  @media (max-width: 768px) {
+    width: 88vw;
+  }
 `;

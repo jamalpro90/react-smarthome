@@ -6,7 +6,10 @@ const Client = () => {
   return (
     <div className="client-container">
       <Title size="64px">Our Client</Title>
-      <div style={{ width: 1000, textAlign: "center" }}>
+      <div
+        className="text-box"
+        style={{ maxWidth: 1000, textAlign: "center", padding: 16 }}
+      >
         <Text>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium,
           ipsa. Hic sit expedita nemo deleniti corporis fuga eius officiis
