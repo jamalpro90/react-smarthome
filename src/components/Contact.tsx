@@ -2,6 +2,12 @@ import React from "react";
 import { Title } from "./emotion";
 
 const Contact = () => {
+  const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+
+    alert("You Can't Send Email Right Now");
+  };
+
   return (
     <div id="contact" className="contact-container">
       <Title size="64px">Contact</Title>
@@ -48,7 +54,9 @@ const Contact = () => {
         />
 
         {/* Button */}
-        <button type="submit">Send</button>
+        <button type="submit" onClick={e => handleSubmit(e)}>
+          Send
+        </button>
       </form>
       {/* </Container> */}
     </div>
