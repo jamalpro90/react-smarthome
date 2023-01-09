@@ -88,6 +88,26 @@
   display: none;
 }
 
+@media (max-width: 1000px) {
+  .hero-container {
+    .hero-phone-images .medium {
+      display: none;
+    }
+
+    .hero-phone-images {
+      width: 100vw;
+      text-align: center;
+      left: 0;
+
+      img {
+        &.large {
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .hero-container {
     .circle {

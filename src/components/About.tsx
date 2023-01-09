@@ -2,6 +2,10 @@ import React from "react";
 import { ButtonBlue, Text, Title } from "./emotion";
 
 const About = () => {
+  const handleClick = () => {
+    alert("Not Available");
+  };
+
   return (
     <div id="about" className="about-container">
       <Title size="64px">About Us</Title>
@@ -29,7 +33,7 @@ const About = () => {
             laboriosam facere nemo animi molestiae eveniet, officia omnis modi,
             corporis iure accusantium eligendi?
           </Text>
-          <ButtonBlue>See More</ButtonBlue>
+          <ButtonBlue onClick={handleClick}>See More</ButtonBlue>
         </div>
       </div>
     </div>

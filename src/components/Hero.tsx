@@ -52,9 +52,9 @@ const Hero = () => {
 
       {/* Hero Image Slices */}
       <div className="hero-phone-images">
-        <img src="/img/hp.png" alt="smartphone" />
+        <img src="/img/hp.png" alt="smartphone" className="medium" />
         <img src="/img/hp.png" alt="smartphone" className="large" />
-        <img src="/img/hp.png" alt="smartphone" />
+        <img src="/img/hp.png" alt="smartphone" className="medium" />
       </div>
 
       {/* Phone Image Mobile */}

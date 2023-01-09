@@ -13,7 +13,7 @@ const Download = () => {
           <Title className="sub-title" margin="1rem 0 0 0">
             Download For Mobile App
           </Title>
-          <Text>
+          <Text className="desc">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At
             debitis, impedit laborum iusto quod aliquid dolor eveniet incidunt
             consectetur ut fugiat quia nostrum suscipit eum minus! Architecto,

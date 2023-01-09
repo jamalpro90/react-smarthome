@@ -5,7 +5,7 @@ const Contact = () => {
   const handleSubmit = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
 
-    alert("You Can't Send Email Right Now");
+    alert("Not Available");
   };
 
   return (
